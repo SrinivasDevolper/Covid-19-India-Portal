@@ -1,0 +1,58 @@
+GET http://localhost:3000/states/3/stats/
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzExNjI5NjcyfQ.eCNXHTIwwlxQf4lTniojUHrdl5a0CWBh-QeRAhYnzVs
+
+
+PUT http://localhost:3000/districts/3/
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzExNjI5NjcyfQ.eCNXHTIwwlxQf4lTniojUHrdl5a0CWBh-QeRAhYnzVs
+content-type: application/json
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+DELETE http://localhost:3000/districts/3/
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzExNjI5NjcyfQ.eCNXHTIwwlxQf4lTniojUHrdl5a0CWBh-QeRAhYnzVs
+
+GET http://localhost:3000/districts/12/
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzExNjI5NjcyfQ.eCNXHTIwwlxQf4lTniojUHrdl5a0CWBh-QeRAhYnzVs
+
+POST http://localhost:3000/districts/
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzExNTQ5OTkwfQ.hUUUVXe6uGMjVee4tl4XHBvFG0TtPhFEEZ7mKpCNySE
+content-type: application/json
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+GET http://localhost:3000/states/8/
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzExNTQ5OTkwfQ.hUUUVXe6uGMjVee4tl4XHBvFG0TtPhFEEZ7mKpCNySE
+
+GET http://localhost:3000/states/
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzExNjI5NjcyfQ.eCNXHTIwwlxQf4lTniojUHrdl5a0CWBh-QeRAhYnzVs
+
+POST http://localhost:3000/user/
+content-type:application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
+
+POST http://localhost:3000/login/
+content-type:application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
+
